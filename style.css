@@ -14,42 +14,49 @@ html,
 body {
     height: 100%;
     width: 100%;
-    
+
 }
 
 .main {
-    width: 100%;
-    height: 100vh;
+    overflow: hidden;
     position: relative;
 }
 
 /* nav CSS */
 
-nav{
-    height: 3vw;
-    width: 100%;
+nav {
+    height: 2.5vw;
+    width: 80%;
     position: fixed;
-    z-index: 99;
-    padding:4vw 7vw;
+    z-index: 10;
+    padding: 2.5vw 5vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10vw;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background-color: #dadada3f;
 }
-nav .nav-part1 h1{
+
+nav .nav-part1 h1 {
     font-family: hero;
     font-size: 1.8vw;
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 0.2vw;
 }
-nav .nav-part2{
+
+nav .nav-part2 {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 3vw;
 }
 
-nav .nav-part2 h4{
+nav .nav-part2 h4 {
     font-size: 1.3vw;
     font-weight: 100;
     text-transform: uppercase;
@@ -62,17 +69,51 @@ nav .nav-part2 h4{
     position: relative;
     height: 100vh;
     width: 100%;
-    background-image: url(Banner.jpg);
-    background-position: center;
-    background-size: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    overflow: hidden;
 }
 
 
-.page1 .centerpart h1{
+.page1 img {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: auto;
+    z-index: -1;
+}
+
+.page1 .page1content {
+    position: absolute;
+    justify-content: flex-end;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 9;
+    text-align: center;
+}
+
+.page1 .courser {
+    position: absolute;
+    z-index: 10;
+    height: 3.5vw;
+    width: 3.5vw;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 50%;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: all ease 0.1s;
+}
+
+.pgae1 .centerpart{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+}
+
+.page1 .centerpart h1 {
     font-size: 6vw;
     text-transform: uppercase;
     letter-spacing: 1vw;
@@ -81,15 +122,15 @@ nav .nav-part2 h4{
     color: #2C541D;
 }
 
-.page1 .centerpart h6{
+.page1 .centerpart h6 {
     font-size: 3vw;
     text-transform: uppercase;
     letter-spacing: 0.5vw;
     font-weight: 10;
-    line-height:6vw;
+    line-height: 6vw;
 }
 
-.page1 .centerpart button{
+.page1 .centerpart button {
     font-size: 1.3vw;
     letter-spacing: 0.3vw;
     font-weight: 900;
@@ -98,12 +139,23 @@ nav .nav-part2 h4{
     height: 3.5vw;
     border: none;
     border-radius: 0.2vw;
-    background-color:#74A84A;
+    background-color: #74A84A;
     color: white;
     cursor: pointer;
     transition: all ease 0.5s;
 }
 
-.page1 .centerpart button:hover{
+.page1 .centerpart button:hover {
     background-color: #2C541D;
 }
+
+
+/* page2 CSS */
+
+
+.page2{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
