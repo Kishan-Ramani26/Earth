@@ -38,7 +38,6 @@ nav {
     border-radius: 10vw;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    background-color: #dadada3f;
 }
 
 nav .nav-part1 h1 {
@@ -93,6 +92,7 @@ nav .nav-part2 h4 {
 }
 
 .page1 .courser {
+    scale: 0;
     position: absolute;
     z-index: 10;
     height: 3.5vw;
@@ -157,5 +157,38 @@ nav .nav-part2 h4 {
     height: 100vh;
     width: 100%;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.page2 .page2content{
+    background-color: #74A84A;   
+    position: relative;
+    height: 80%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.page2 .page2content .first{
+    height: 100%;
+    width: 33%;
+}
+
+.page2 .page2content .first img{
+    height: 60%;
+    width: 90%;
+    background-position: center;
+}
+
+.page2 .page2content .scond{
+    height: 100%;
+    width: 33%;
+}
+
+.page2 .page2content .third{
+    height: 100%;
+    width: 33%;
+}

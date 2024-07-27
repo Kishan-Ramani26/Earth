@@ -32,9 +32,17 @@ ScrollTrigger.refresh();
 locomotive();
 
 
-
+function courserAnnmation(){
+  
 let page1 = document.querySelector(".page1");
 let courser = document.querySelector(".courser");
+
+page1.addEventListener('mouseenter',function (){
+  gsap.to(courser,{
+    scale:1,
+    duration:0.5
+  })
+})
 
 page1.addEventListener("mousemove", function (e) {
     gsap.to(courser, {
@@ -42,3 +50,11 @@ page1.addEventListener("mousemove", function (e) {
         y: e.y+1,
     })
 })
+
+page1.addEventListener('mouseleave',function(){
+  gsap.to(courser,{
+    scale:0,
+    duration:0.5
+  })
+})
+}
