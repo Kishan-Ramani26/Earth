@@ -26,7 +26,7 @@ body {
 
 nav {
     height: 2.5vw;
-    width: 80%;
+    width: 100%;
     position: fixed;
     z-index: 10;
     padding: 2.5vw 5vw;
@@ -163,13 +163,13 @@ nav .nav-part2 h4 {
 }
 
 .page2 .page2content{
-    background-color: #74A84A;   
     position: relative;
     height: 80%;
     width: 90%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 2vw;
 }
 
 .page2 .page2content .first{
@@ -178,9 +178,10 @@ nav .nav-part2 h4 {
 }
 
 .page2 .page2content .first img{
-    height: 60%;
-    width: 90%;
-    background-position: center;
+    height: 80%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .page2 .page2content .scond{
@@ -188,7 +189,44 @@ nav .nav-part2 h4 {
     width: 33%;
 }
 
+.page2 .page2content .scond img{
+    height: 80%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
 .page2 .page2content .third{
     height: 100%;
     width: 33%;
+}
+
+.page2 .page2content .third img{
+    height: 80%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.page2content .text{
+    position: relative;
+    padding: 0 1vw;
+}
+
+.page2content .text :nth-child(1){
+    font-size: 1.3vw;
+    color: #9A9A9A;
+    font-weight: 100;
+}
+
+.page2content .text :nth-child(2){
+    font-size: 1.7vw;
+    font-weight: 800;
+    color: black;
+}
+
+.page2content .text :nth-child(3){
+    font-size: 1.4vw;
+    font-weight: 500;
+    color: #202020;
 }
