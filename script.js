@@ -57,4 +57,34 @@ page1.addEventListener('mouseleave',function(){
     duration:0.5
   })
 })
-}
+}courserAnnmation();
+
+
+gsap.from(".imgContainer .pg3img1,.pg3img3",{
+  x:-20,
+  duration:0.5,
+  opacity:0,
+  stagger:{
+    amount:0.5
+  },
+  scrollTrigger:{
+    trigger:`.imgContainer .pg3img1`,
+    scroller:`.main`,
+    start:`top 90%`,
+    markers : true
+  }
+})
+
+gsap.from(".imgContainer .pg3img2 , .pg3img4",{
+  x:20,
+  duration:0.5,
+  opacity:0,
+  stagger:{
+    amount:0.5
+  },
+  scrollTrigger:{
+    trigger:`.imgContainer .pg3img2`,
+    scroller:`.main`,
+    start:`top 70%`,
+  }
+})

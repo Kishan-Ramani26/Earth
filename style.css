@@ -76,8 +76,10 @@ nav .nav-part2 h4 {
     position: absolute;
     height: 100vh;
     width: 100%;
-    background-position: center;
-    background-size: auto;
+    /* background-position: center; */
+    /* background-size: auto; */
+    object-fit: cover;
+    object-position: center;
     z-index: -1;
 }
 
@@ -86,7 +88,7 @@ nav .nav-part2 h4 {
     justify-content: flex-end;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     z-index: 9;
     text-align: center;
 }
@@ -105,11 +107,11 @@ nav .nav-part2 h4 {
     transition: all ease 0.1s;
 }
 
-.pgae1 .centerpart{
+.pgae1 .centerpart {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     background-color: #fff;
 }
 
@@ -153,7 +155,7 @@ nav .nav-part2 h4 {
 /* page2 CSS */
 
 
-.page2{
+.page2 {
     height: 100vh;
     width: 100%;
     position: relative;
@@ -162,7 +164,7 @@ nav .nav-part2 h4 {
     justify-content: center;
 }
 
-.page2 .page2content{
+.page2 .page2content {
     position: relative;
     height: 80%;
     width: 90%;
@@ -172,61 +174,138 @@ nav .nav-part2 h4 {
     gap: 2vw;
 }
 
-.page2 .page2content .first{
+.page2 .page2content .first {
     height: 100%;
     width: 33%;
 }
 
-.page2 .page2content .first img{
+.page2 .page2content .first img {
     height: 80%;
     width: 100%;
     object-fit: cover;
     object-position: center;
 }
 
-.page2 .page2content .scond{
+.page2 .page2content .scond {
     height: 100%;
     width: 33%;
 }
 
-.page2 .page2content .scond img{
+.page2 .page2content .scond img {
     height: 80%;
     width: 100%;
     object-fit: cover;
     object-position: center;
 }
 
-.page2 .page2content .third{
+.page2 .page2content .third {
     height: 100%;
     width: 33%;
 }
 
-.page2 .page2content .third img{
+.page2 .page2content .third img {
     height: 80%;
     width: 100%;
     object-fit: cover;
     object-position: center;
 }
 
-.page2content .text{
+.page2content .text {
     position: relative;
     padding: 0 1vw;
 }
 
-.page2content .text :nth-child(1){
+.page2content .text :nth-child(1) {
     font-size: 1.3vw;
     color: #9A9A9A;
     font-weight: 100;
 }
 
-.page2content .text :nth-child(2){
+.page2content .text :nth-child(2) {
     font-size: 1.7vw;
     font-weight: 800;
     color: black;
 }
 
-.page2content .text :nth-child(3){
+.page2content .text :nth-child(3) {
     font-size: 1.4vw;
     font-weight: 500;
     color: #202020;
 }
+
+
+/* page3 CSS*/
+
+.page3 {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.page3 .imgContainer {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 1vw;
+    padding: 5vw 5vw;
+}
+
+.imgContainer .ptr1 {
+    height: 50%;
+    width: 100%;
+    /* background-color: rebeccapurple; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1vw;
+}
+
+.imgContainer .ptr1 :nth-child(1) {
+    height: 100%;
+    width: 70%;
+    object-fit: cover;
+    object-position: center;
+    border: none;
+    border-radius: 2vw;
+}
+
+.imgContainer .ptr1 :nth-child(2) {
+    height: 100%;
+    width: 30%;
+    object-fit: cover;
+    object-position: center;
+    border: none;
+    border-radius: 2vw;
+}
+
+.imgContainer .ptr2 {
+    height: 50%;
+    width: 100%;
+    /* background-color: wheat; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1vw;
+}
+
+.imgContainer .ptr2 :nth-child(1){
+    height: 100%;
+    width: 30%;
+    object-fit: cover;
+    object-position: center;
+    border: none;
+    border-radius: 2vw;
+}
+.imgContainer .ptr2 :nth-child(2){
+    height: 100%;
+    width: 70%;
+    object-fit: cover;
+    object-position: center;
+    border: none;
+    border-radius: 2vw;
+}
+
