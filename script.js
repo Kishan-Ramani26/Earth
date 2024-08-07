@@ -59,32 +59,41 @@ page1.addEventListener('mouseleave',function(){
 })
 }courserAnnmation();
 
-
-gsap.from(".imgContainer .pg3img1,.pg3img3",{
-  x:-20,
+gsap.from(".page1 .centerpart h1 span",{
+  y:100,
   duration:0.5,
-  opacity:0,
   stagger:{
-    amount:0.5
+    amount:0.3
   },
-  scrollTrigger:{
-    trigger:`.imgContainer .pg3img1`,
-    scroller:`.main`,
-    start:`top 90%`,
-    markers : true
-  }
+  
 })
 
-gsap.from(".imgContainer .pg3img2 , .pg3img4",{
-  x:20,
-  duration:0.5,
-  opacity:0,
-  stagger:{
-    amount:0.5
-  },
-  scrollTrigger:{
-    trigger:`.imgContainer .pg3img2`,
-    scroller:`.main`,
-    start:`top 70%`,
-  }
-})
+function page2Annimation(){
+  gsap.from(".imgContainer .pg3img1,.pg3img3",{
+    x:-20,
+    duration:0.5,
+    opacity:0,
+    stagger:{
+      amount:0.5
+    },
+    scrollTrigger:{
+      trigger:`.imgContainer .pg3img1`,
+      scroller:`.main`,
+      start:`top 90%`,
+    }
+  })
+  
+  gsap.from(".imgContainer .pg3img2 , .pg3img4",{
+    x:20,
+    duration:0.5,
+    opacity:0,
+    stagger:{
+      amount:0.5
+    },
+    scrollTrigger:{
+      trigger:`.imgContainer .pg3img2`,
+      scroller:`.main`,
+      start:`top 70%`,
+    }
+  })
+}
