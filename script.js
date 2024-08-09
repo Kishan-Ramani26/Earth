@@ -65,7 +65,11 @@ gsap.from(".page1 .centerpart h1 span",{
   stagger:{
     amount:0.3
   },
-  
+})
+
+gsap.from("nav",{
+  y:-100,
+  duration:0.5,
 })
 
 function page2Annimation(){
@@ -96,4 +100,4 @@ function page2Annimation(){
       start:`top 70%`,
     }
   })
-}
+}page2Annimation();
